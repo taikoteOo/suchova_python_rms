@@ -1,4 +1,6 @@
-from . import MenuItem
+# from . import MenuItem
+import json
+from datetime import datetime as dt
 
 
 class Order:
@@ -7,7 +9,11 @@ class Order:
         self.order_id = None
         self.items = []
         self.total_price = 0
-        self.created_at = None
+        self.created_at = dt.today()
 
-    def search_item(self, item: str):
-        pass
+
+
+
+
+
+# order = Order(1)
