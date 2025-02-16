@@ -1,4 +1,5 @@
-# from . import MenuItem
+from . import MenuItem
+from . import OrderManager
 import json
 from datetime import datetime as dt
 
@@ -11,9 +12,5 @@ class Order:
         self.total_price = 0
         self.created_at = dt.today()
 
-
-
-
-
-
-# order = Order(1)
+    def add_item(self):
+        menu = OrderManager.get_menu()
